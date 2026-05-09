@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip --version)",
+      "Bash(python -c \"import venv; print\\('venv: ok'\\)\")",
+      "Bash(python -c \"import torch; print\\('torch:', torch.__version__\\)\")",
+      "Bash(uv pip *)",
+      "Bash(.venv\\\\Scripts\\\\python.exe -c \"import torch; print\\('torch:', torch.__version__\\); print\\('CUDA available:', torch.cuda.is_available\\(\\)\\); print\\('GPU:', torch.cuda.get_device_name\\(0\\) if torch.cuda.is_available\\(\\) else 'none'\\)\")"
+    ]
+  }
+}
